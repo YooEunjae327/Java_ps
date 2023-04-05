@@ -1,7 +1,7 @@
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ps_1063 {
+public class P1063 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String[][] arr = {  {"A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8"},

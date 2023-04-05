@@ -2,7 +2,7 @@
     import java.util.List;
     import java.util.Scanner;
 
-    public class Ps_10952 {
+    public class P10952 {
         public static void main(String[] args) {
             Scanner sc = new Scanner(System.in);
 

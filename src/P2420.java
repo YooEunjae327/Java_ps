@@ -1,8 +1,6 @@
-import java.math.BigInteger;
-import java.util.Arrays;
 import java.util.Scanner;
 
-public class Ps_2420 {
+public class P2420 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

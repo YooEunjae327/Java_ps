@@ -2,7 +2,7 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class Ps_2822 {
+public class P2822 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

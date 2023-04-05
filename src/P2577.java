@@ -1,7 +1,7 @@
 import java.util.HashMap;
 import java.util.Scanner;
 
-public class Ps_2577 {
+public class P2577 {
     public static void main(String[] args) {
         HashMap<String, Integer> cap = new HashMap<String,Integer>();
         Scanner sc = new Scanner(System.in);

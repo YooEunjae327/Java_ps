@@ -1,7 +1,7 @@
 import java.util.*;
 import java.util.stream.IntStream;
 
-public class Ps_10950 {
+public class P10950 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
