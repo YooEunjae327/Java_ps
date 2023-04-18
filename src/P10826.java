@@ -15,7 +15,8 @@ public class P10826 {
             b = a.subtract(b);
 
         }
-        System.out.println(a);
+        System.out.println(anInt == 0 ? 0 : a);
+
 
     }
 }
