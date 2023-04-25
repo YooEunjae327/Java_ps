@@ -4,14 +4,13 @@ import java.util.*;
 
 public class P42579 {
     public static void main(String[] args) {
-        String[] a = {"classic", "pop", "classic", "classic", "pop", "sex" , "sex"};
-        int[] b = {500, 600, 150, 800, 2500, 1000, 4000};
+        String[] a = {"classic", "pop", "classic", "classic", "pop"};
+        int[] b = {500, 600, 150, 800, 2500};
         System.out.println(solution(a, b));
     }
 
     public static ArrayList<Integer> solution(String[] genres, int[] plays) {
         ArrayList<Integer> answer = new ArrayList<>();
-
 
         ArrayList<Integer> genre = new ArrayList<>();
         HashMap<String, Integer> map = new HashMap<>();
@@ -42,21 +41,46 @@ public class P42579 {
         st.sort(Collections.reverseOrder());
         se.sort(Collections.reverseOrder());
 
-        for(int i = 0; i < 2; i++) {
-            for(int j = 0; j < genres.length ; j++) {
-                if(plays[j] == st.get(i) ) {
-                    answer.add(j);
+        if(st.size() < 2) {
+            for (Integer integer : st) {
+                for (int j = 0; j < genres.length; j++) {
+                    if (plays[j] == integer) {
+                        answer.add(j);
+                    }
+                }
+            }
+        } else {
+            for(int i = 0; i < 2; i++) {
+                for(int j = 0; j < genres.length ; j++) {
+                    if(plays[j] == st.get(i) ) {
+                        answer.add(j);
+                    }
                 }
             }
         }
 
-        for(int i = 0; i < 2; i++) {
-            for(int j = 0; j < genres.length ; j++) {
-                if(plays[j] == se.get(i) ) {
-                    answer.add(j);
+
+        System.out.println(se);
+        System.out.println(Arrays.toString(genres));
+
+        if(se.size() < 2 ) {
+            for (Integer integer : se) {
+                for (int j = 0; j < genres.length; j++) {
+                    if (plays[j] == integer) {
+                        answer.add(j);
+                    }
+                }
+            }
+        } else {
+            for(int i = 0; i < 2; i++) {
+                for(int j = 0; j < genres.length ; j++) {
+                    if(plays[j] == se.get(i) ) {
+                        answer.add(j);
+                    }
                 }
             }
         }
+
         return answer;
     }
 }
